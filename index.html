@@ -1,0 +1,71 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+export default function HomePage() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-indigo-800 to-purple-900 text-white px-4 py-6 bg-cover bg-no-repeat" style={{ backgroundImage: "url('https://i.imgur.com/0lRjW4b.jpg')" }}>
+      <div className="backdrop-blur-sm bg-black/60 p-6 rounded-xl">
+        <header className="text-center mb-10">
+          <img src="https://i.imgur.com/v3Xz4Wv.png" alt="Logo One Piece" className="mx-auto w-24 h-24 rounded-full border-4 border-yellow-400 mb-4" />
+          <h1 className="text-4xl font-bold mb-2">Dịch Vụ Game - Đức Phạm</h1>
+          <p className="text-lg">Cày thuê Blox Fruits, bán trái ác quỷ, thức tỉnh, item... Giá rẻ - Uy tín - Nhanh chóng</p>
+        </header>
+
+        <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+          <Card className="bg-purple-700 border-0">
+            <CardContent className="p-4">
+              <h2 className="text-2xl font-semibold mb-2">📦 Danh sách dịch vụ</h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Thu mua & bán trái ác quỷ: 5K - 38K</li>
+                <li>Cày cấp: 10K - 20K</li>
+                <li>Mastery (Melee/Gun): 20K - 40K</li>
+                <li>Melee: Dragon Talon, Superhuman,...</li>
+                <li>Thức tỉnh: Dough, Phoenix (15K)</li>
+                <li>Item hiếm, vũ khí, Gear V4...</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-purple-700 border-0">
+            <CardContent className="p-4">
+              <h2 className="text-2xl font-semibold mb-2">💰 Hướng dẫn thanh toán</h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Ngân hàng MB: <b>0966838847</b></li>
+                <li>Nội dung: [Tên + dịch vụ]</li>
+                <li>Zalo xác nhận: <b>0966838847</b></li>
+                <li>TSR: <b>Duchuy2008</b></li>
+              </ul>
+              <div className="mt-4 text-center">
+                <img
+                  src="/mnt/data/69741370-5fc0-45f5-bc25-5940fadb3f05.jpg"
+                  alt="QR Momo"
+                  className="mx-auto w-48 rounded-lg border border-white shadow-lg"
+                />
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-purple-700 border-0">
+            <CardContent className="p-4">
+              <h2 className="text-2xl font-semibold mb-2">📱 Liên hệ nhanh</h2>
+              <p>Zalo: <b>0966838847</b></p>
+              <p>TSR: <b>Duchuy2008</b></p>
+              <p>Facebook/Hashtag: <b>#DucPhamUT</b></p>
+              <Button className="mt-4 bg-yellow-400 text-black hover:bg-yellow-300">Nhắn Zalo</Button>
+            </CardContent>
+          </Card>
+        </section>
+
+        <section className="grid md:grid-cols-2 gap-6 mb-10">
+          <img src="https://i.imgur.com/M4hLHEv.jpg" alt="One Piece" className="w-full rounded-xl shadow-lg" />
+          <img src="https://i.imgur.com/DJr8R8p.jpg" alt="Solo Leveling" className="w-full rounded-xl shadow-lg" />
+        </section>
+
+        <footer className="text-center text-sm text-gray-300 mt-10">
+          © 2025 Dịch vụ game Đức Phạm - All rights reserved.
+        </footer>
+      </div>
+    </div>
+  );
+}
